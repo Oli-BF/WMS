@@ -1,5 +1,5 @@
 # Overview
-* A Warehouse Management System for small logistics companies - Completed as my dissertation for an MSc Computer Science at the University of Birmingham
+* A Warehouse Management System for small logistics companies - Completed as part of my dissertation for MSc Computer Science at the University of Birmingham
 
 ---
 
