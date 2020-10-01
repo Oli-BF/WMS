@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/DataEntityTier" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/DataEntityTier" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="WMSDataSet.warehousesDataTable" nillable="true">
+    <xs:complexType>
+      <xs:annotation>
+        <xs:appinfo>
+          <ActualType Name="WMSDataSet.warehousesDataTable" Namespace="http://schemas.datacontract.org/2004/07/DataEntityTier" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+        </xs:appinfo>
+      </xs:annotation>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+        <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+      </xs:sequence>
+      <xs:attribute fixed="http://tempuri.org/WMSDataSet.xsd" name="namespace" />
+      <xs:attribute fixed="warehousesDataTable" name="tableTypeName" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WMSDataSet.locationsDataTable" nillable="true">
+    <xs:complexType>
+      <xs:annotation>
+        <xs:appinfo>
+          <ActualType Name="WMSDataSet.locationsDataTable" Namespace="http://schemas.datacontract.org/2004/07/DataEntityTier" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+        </xs:appinfo>
+      </xs:annotation>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+        <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+      </xs:sequence>
+      <xs:attribute fixed="http://tempuri.org/WMSDataSet.xsd" name="namespace" />
+      <xs:attribute fixed="locationsDataTable" name="tableTypeName" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WMSDataSet.accountsDataTable" nillable="true">
+    <xs:complexType>
+      <xs:annotation>
+        <xs:appinfo>
+          <ActualType Name="WMSDataSet.accountsDataTable" Namespace="http://schemas.datacontract.org/2004/07/DataEntityTier" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+        </xs:appinfo>
+      </xs:annotation>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+        <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+      </xs:sequence>
+      <xs:attribute fixed="http://tempuri.org/WMSDataSet.xsd" name="namespace" />
+      <xs:attribute fixed="accountsDataTable" name="tableTypeName" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WMSDataSet.productsDataTable" nillable="true">
+    <xs:complexType>
+      <xs:annotation>
+        <xs:appinfo>
+          <ActualType Name="WMSDataSet.productsDataTable" Namespace="http://schemas.datacontract.org/2004/07/DataEntityTier" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+        </xs:appinfo>
+      </xs:annotation>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+        <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+      </xs:sequence>
+      <xs:attribute fixed="http://tempuri.org/WMSDataSet.xsd" name="namespace" />
+      <xs:attribute fixed="productsDataTable" name="tableTypeName" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WMSDataSet.stockDataTable" nillable="true">
+    <xs:complexType>
+      <xs:annotation>
+        <xs:appinfo>
+          <ActualType Name="WMSDataSet.stockDataTable" Namespace="http://schemas.datacontract.org/2004/07/DataEntityTier" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+        </xs:appinfo>
+      </xs:annotation>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+        <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+      </xs:sequence>
+      <xs:attribute fixed="http://tempuri.org/WMSDataSet.xsd" name="namespace" />
+      <xs:attribute fixed="stockDataTable" name="tableTypeName" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WMSDataSet.receiptsDataTable" nillable="true">
+    <xs:complexType>
+      <xs:annotation>
+        <xs:appinfo>
+          <ActualType Name="WMSDataSet.receiptsDataTable" Namespace="http://schemas.datacontract.org/2004/07/DataEntityTier" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+        </xs:appinfo>
+      </xs:annotation>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+        <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+      </xs:sequence>
+      <xs:attribute fixed="http://tempuri.org/WMSDataSet.xsd" name="namespace" />
+      <xs:attribute fixed="receiptsDataTable" name="tableTypeName" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WMSDataSet.receipt_linesDataTable" nillable="true">
+    <xs:complexType>
+      <xs:annotation>
+        <xs:appinfo>
+          <ActualType Name="WMSDataSet.receipt_linesDataTable" Namespace="http://schemas.datacontract.org/2004/07/DataEntityTier" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+        </xs:appinfo>
+      </xs:annotation>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+        <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+      </xs:sequence>
+      <xs:attribute fixed="http://tempuri.org/WMSDataSet.xsd" name="namespace" />
+      <xs:attribute fixed="receipt_linesDataTable" name="tableTypeName" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WMSDataSet.ordersDataTable" nillable="true">
+    <xs:complexType>
+      <xs:annotation>
+        <xs:appinfo>
+          <ActualType Name="WMSDataSet.ordersDataTable" Namespace="http://schemas.datacontract.org/2004/07/DataEntityTier" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+        </xs:appinfo>
+      </xs:annotation>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+        <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+      </xs:sequence>
+      <xs:attribute fixed="http://tempuri.org/WMSDataSet.xsd" name="namespace" />
+      <xs:attribute fixed="ordersDataTable" name="tableTypeName" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WMSDataSet.order_linesDataTable" nillable="true">
+    <xs:complexType>
+      <xs:annotation>
+        <xs:appinfo>
+          <ActualType Name="WMSDataSet.order_linesDataTable" Namespace="http://schemas.datacontract.org/2004/07/DataEntityTier" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+        </xs:appinfo>
+      </xs:annotation>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+        <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+      </xs:sequence>
+      <xs:attribute fixed="http://tempuri.org/WMSDataSet.xsd" name="namespace" />
+      <xs:attribute fixed="order_linesDataTable" name="tableTypeName" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WMSDataSet.usersDataTable" nillable="true">
+    <xs:complexType>
+      <xs:annotation>
+        <xs:appinfo>
+          <ActualType Name="WMSDataSet.usersDataTable" Namespace="http://schemas.datacontract.org/2004/07/DataEntityTier" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+        </xs:appinfo>
+      </xs:annotation>
+      <xs:sequence>
+        <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+        <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+      </xs:sequence>
+      <xs:attribute fixed="http://tempuri.org/WMSDataSet.xsd" name="namespace" />
+      <xs:attribute fixed="usersDataTable" name="tableTypeName" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

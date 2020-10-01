@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ApplicationTier.AccountObject">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AccountObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ApplicationTier.BusinessLogicLayer">
+    <Position X="0.5" Y="0.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>BAuOQo7Itr5EBkjNpcwCFgIAUgMSklVA8HUTCoxpRqQ=</HashCode>
+      <FileName>BusinessLogicLayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ApplicationTier.LocationObject">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAABAAAAgAAAAAAAAAAAEAACAAAAAAAABAAAAA=</HashCode>
+      <FileName>LocationObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ApplicationTier.OrderLineObject">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAgAAAAAAAAAACAAkAAAAAAAAA=</HashCode>
+      <FileName>OrderLineObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ApplicationTier.OrderObject">
+    <Position X="8" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAQAAAASgCIAAAIIACCAAAgAAAAAAQAA=</HashCode>
+      <FileName>OrderObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ApplicationTier.PickObject">
+    <Position X="4.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAABAAAAAAAAAAgAAAEAAAAAACAgkAAABAAAAA=</HashCode>
+      <FileName>PickObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ApplicationTier.ProductObject">
+    <Position X="4.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAACAAAAAAAAAAAAAAEAAABAAAAA=</HashCode>
+      <FileName>ProductObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ApplicationTier.ReceiptLineObject">
+    <Position X="9.75" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQgAAACAAkAAAAAAAAA=</HashCode>
+      <FileName>ReceiptLineObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ApplicationTier.ReceiptObject">
+    <Position X="6.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAABACAAAAAAQAASAAAAgAAAAAAAAA=</HashCode>
+      <FileName>ReceiptObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ApplicationTier.StockObject">
+    <Position X="9.75" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAABAAAAAAAAACAEAAAAAAACACAAkAAAAAABAA=</HashCode>
+      <FileName>StockObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ApplicationTier.UserObject">
+    <Position X="6.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAQAgAAAAABAAAAAAAAAAAAAAAgCAQAA=</HashCode>
+      <FileName>UserObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ApplicationTier.WarehouseObject">
+    <Position X="9.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAECAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WarehouseObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

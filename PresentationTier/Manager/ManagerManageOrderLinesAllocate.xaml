@@ -1,0 +1,52 @@
+﻿<Page x:Class="PresentationTier.Manager.ManagerManageOrderLinesAllocate"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PresentationTier.Manager"
+      mc:Ignorable="d" 
+      Title="ManagerManageOrderLinesAllocate" Background="White" >
+
+    <ScrollViewer x:Name="scrollViewer1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" >
+
+        <Grid Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center" Height="980" Width="1900" >
+
+            <Rectangle x:Name="rectangle1" Fill="#FFF2F2F2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="1010" Width="250" Margin="-10,-10,1660,-20" />
+
+            <TextBlock x:Name="title1" Text="View Orders" FontSize="20" FontWeight="Bold" Margin="-10,10,1660,920" Padding="20,10,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="250" Height="50" />
+            <Button x:Name="button1" Content="Orders - All" FontSize="18" Style="{StaticResource AccentButtonStyle}" Background="{x:Null}" Foreground="Black" Margin="-10,60,1660,870" Padding="30,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Click="Button_Click1" />
+
+            <TextBlock x:Name="title2" Text="Manage Orders" FontSize="20" FontWeight="Bold" Margin="-10,110,1660,820" Padding="20,10,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="250" Height="50" />
+            <Button x:Name="button2" Content="Orders - Add" FontSize="18" Style="{StaticResource AccentButtonStyle}" Background="{x:Null}" Foreground="Black" Margin="-10,160,1660,770" Padding="30,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Click="Button_Click2" />
+            <Button x:Name="button3" Content="Orders - Delete" FontSize="18" Style="{StaticResource AccentButtonStyle}" Background="{x:Null}" Foreground="Black" Margin="-10,210,1660,720" Padding="30,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Click="Button_Click3" />
+            <Button x:Name="button4" Content="Orders - Edit" FontSize="18" Style="{StaticResource AccentButtonStyle}" Background="{x:Null}" Foreground="Black" Margin="-10,260,1660,670" Padding="30,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Click="Button_Click4" />
+
+            <TextBlock x:Name="title3" Text="View Order Lines" FontSize="20" FontWeight="Bold" Margin="-10,310,1660,620" Padding="20,10,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="250" Height="50" />
+            <Button x:Name="button5" Content="Order Lines - All" FontSize="18" Style="{StaticResource AccentButtonStyle}" Background="{x:Null}" Foreground="Black" Margin="-10,360,1660,570" Padding="30,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Click="Button_Click5" />
+
+            <TextBlock x:Name="title4" Text="Manage Order Lines" FontSize="20" FontWeight="Bold" Margin="-10,410,1660,520" Padding="20,10,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="250" Height="50" />
+            <Button x:Name="button6" Content="Order Lines - Add" FontSize="18" Style="{StaticResource AccentButtonStyle}" Background="{x:Null}" Foreground="Black" Margin="-10,460,1660,470" Padding="30,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Click="Button_Click6" />
+            <Button x:Name="button7" Content="Order Lines - Allocate" FontSize="18" Style="{StaticResource AccentButtonStyle}" Background="{x:Null}" Foreground="Black" Margin="-10,510,1660,420" Padding="30,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Click="Button_Click7" />
+            <Button x:Name="button8" Content="Order Lines - Delete" FontSize="18" Style="{StaticResource AccentButtonStyle}" Background="{x:Null}" Foreground="Black" Margin="-10,560,1660,370" Padding="30,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Click="Button_Click8" />
+            <Button x:Name="button9" Content="Order Lines - Edit" FontSize="18" Style="{StaticResource AccentButtonStyle}" Background="{x:Null}" Foreground="Black" Margin="-10,610,1660,320" Padding="30,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Click="Button_Click9" />
+
+            <TextBlock x:Name="title5" Text="View Picks" FontSize="20" FontWeight="Bold" Margin="-10,660,1660,270" Padding="20,10,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="250" Height="50" />
+            <Button x:Name="button10" Content="Picks - All" FontSize="18" Style="{StaticResource AccentButtonStyle}" Background="{x:Null}" Foreground="Black" Margin="-10,710,1660,220" Padding="30,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Click="Button_Click10" />
+
+            <TextBlock x:Name="title6" Text="Manage Picks" FontSize="20" FontWeight="Bold" Margin="-10,760,1660,170" Padding="20,10,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="250" Height="50" />
+            <Button x:Name="button11" Content="Picks - Delete" FontSize="18" Style="{StaticResource AccentButtonStyle}" Background="{x:Null}" Foreground="Black" Margin="-10,810,1660,120" Padding="30,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Click="Button_Click11" />
+
+            <Button x:Name="backButton" Content="&lt;-" Style="{StaticResource AccentButtonStyle}" FontSize="24" FontWeight="Bold" Margin="10,920,1840,10" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="50" Click="Back_Button_Click"/>
+
+            <TextBlock x:Name="title7" Text="Allocate Current Order Line" FontSize="24" Margin="310,10,1091,920" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="500" Padding="0,7,0,0" />
+
+            <Label x:Name="label1" Content="Order Line ID" Margin="310,111,1340,849" HorizontalAlignment="Center" VerticalAlignment="Center" Height="20" Width="250" FontSize="16" RenderTransformOrigin="0.592,0.483"/>
+            <TextBox x:Name="orderLineIdInput" TextWrapping="Wrap" Margin="310,136,1340,809" HorizontalAlignment="Center" VerticalAlignment="Center" Height="35" Width="250" FontSize="16"/>
+
+            <TextBlock HorizontalAlignment="Left" Height="108" Margin="310,230,0,0" TextWrapping="Wrap" Text="Do not allocate the same Order Line twice. If this does occur by accident, please delete the related auto-generated Pick using the 'Picks - Delete' page right away." VerticalAlignment="Top" Width="250"/>
+            
+            <Button x:Name="label30" Content="Allocate" Style="{StaticResource AccentButtonStyle}" FontSize="24" FontWeight="Bold" Margin="1716,890,60,40" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="124" Click="AllocateButton_Click"/>
+
+        </Grid>
+    </ScrollViewer>
+</Page>

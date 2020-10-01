@@ -1,0 +1,719 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2292F528-9997-49D6-980F-9F45C107C48B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PresentationTier</RootNamespace>
+    <AssemblyName>PresentationTier</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ModernWpf, Version=0.9.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ModernWpfUI.0.9.1\lib\net462\ModernWpf.dll</HintPath>
+    </Reference>
+    <Reference Include="ModernWpf.Controls, Version=0.9.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ModernWpfUI.0.9.1\lib\net462\ModernWpf.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="ReachFramework" />
+    <Reference Include="Security.Cryptography, Version=1.7.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Security.Cryptography.1.7.2\lib\net35\Security.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Shared.WPF, Version=18.2460.0.44, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.4.3.0\lib\net462\System.IO.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Runtime, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.4.3.0\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.1\lib\net463\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.ProtectedData, Version=4.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.ProtectedData.4.7.0\lib\net461\System.Security.Cryptography.ProtectedData.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Xceed.Wpf.AvalonDock, Version=4.0.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.4.0.1\lib\net40\Xceed.Wpf.AvalonDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Aero, Version=4.0.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.4.0.1\lib\net40\Xceed.Wpf.AvalonDock.Themes.Aero.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Metro, Version=4.0.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.4.0.1\lib\net40\Xceed.Wpf.AvalonDock.Themes.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.VS2010, Version=4.0.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.4.0.1\lib\net40\Xceed.Wpf.AvalonDock.Themes.VS2010.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.Toolkit, Version=4.0.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.4.0.1\lib\net40\Xceed.Wpf.Toolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Admin\AdminManageAccountsAdd.xaml.cs">
+      <DependentUpon>AdminManageAccountsAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminManageAccountsDelete.xaml.cs">
+      <DependentUpon>AdminManageAccountsDelete.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminManageAccountsEdit.xaml.cs">
+      <DependentUpon>AdminManageAccountsEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminManageUsersAdd.xaml.cs">
+      <DependentUpon>AdminManageUsersAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminManageUsersDelete.xaml.cs">
+      <DependentUpon>AdminManageUsersDelete.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminManageUsersEdit.xaml.cs">
+      <DependentUpon>AdminManageUsersEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminManageWarehousesAdd.xaml.cs">
+      <DependentUpon>AdminManageWarehousesAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminManageWarehousesDelete.xaml.cs">
+      <DependentUpon>AdminManageWarehousesDelete.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminManageWarehousesEdit.xaml.cs">
+      <DependentUpon>AdminManageWarehousesEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminViewAccountsAll.xaml.cs">
+      <DependentUpon>AdminViewAccountsAll.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminViewLocationsAll.xaml.cs">
+      <DependentUpon>AdminViewLocationsAll.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminViewUsersAdmins.xaml.cs">
+      <DependentUpon>AdminViewUsersAdmins.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminViewUsersAll.xaml.cs">
+      <DependentUpon>AdminViewUsersAll.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminViewUsersManagers.xaml.cs">
+      <DependentUpon>AdminViewUsersManagers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminViewUsersWorkers.xaml.cs">
+      <DependentUpon>AdminViewUsersWorkers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminViewWarehousesAll.xaml.cs">
+      <DependentUpon>AdminViewWarehousesAll.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ManagerHomepage.xaml.cs">
+      <DependentUpon>ManagerHomepage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ManagerManageOrderLinesAdd.xaml.cs">
+      <DependentUpon>ManagerManageOrderLinesAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ManagerManageOrderLinesDelete.xaml.cs">
+      <DependentUpon>ManagerManageOrderLinesDelete.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ManagerManageOrderLinesEdit.xaml.cs">
+      <DependentUpon>ManagerManageOrderLinesEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ManagerManageOrdersAdd.xaml.cs">
+      <DependentUpon>ManagerManageOrdersAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ManagerManageOrderLinesAllocate.xaml.cs">
+      <DependentUpon>ManagerManageOrderLinesAllocate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ManagerManageOrdersDelete.xaml.cs">
+      <DependentUpon>ManagerManageOrdersDelete.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ManagerManageOrdersEdit.xaml.cs">
+      <DependentUpon>ManagerManageOrdersEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ManagerManagePicksDelete.xaml.cs">
+      <DependentUpon>ManagerManagePicksDelete.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ManagerManageProductsAdd.xaml.cs">
+      <DependentUpon>ManagerManageProductsAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ManagerManageProductsDelete.xaml.cs">
+      <DependentUpon>ManagerManageProductsDelete.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ManagerManageProductsEdit.xaml.cs">
+      <DependentUpon>ManagerManageProductsEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ManagerManageReceiptLinesAdd.xaml.cs">
+      <DependentUpon>ManagerManageReceiptLinesAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ManagerManageReceiptLinesDelete.xaml.cs">
+      <DependentUpon>ManagerManageReceiptLinesDelete.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ManagerManageReceiptLinesEdit.xaml.cs">
+      <DependentUpon>ManagerManageReceiptLinesEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ManagerManageReceiptsAdd.xaml.cs">
+      <DependentUpon>ManagerManageReceiptsAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ManagerManageReceiptsDelete.xaml.cs">
+      <DependentUpon>ManagerManageReceiptsDelete.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ManagerManageReceiptsEdit.xaml.cs">
+      <DependentUpon>ManagerManageReceiptsEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ManagerManageStockAdd.xaml.cs">
+      <DependentUpon>ManagerManageStockAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ManagerManageStockDelete.xaml.cs">
+      <DependentUpon>ManagerManageStockDelete.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ManagerManageStockEdit.xaml.cs">
+      <DependentUpon>ManagerManageStockEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ManagerViewAccountsAll.xaml.cs">
+      <DependentUpon>ManagerViewAccountsAll.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ManagerViewLocationsAll.xaml.cs">
+      <DependentUpon>ManagerViewLocationsAll.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ManagerViewOrderLinesAll.xaml.cs">
+      <DependentUpon>ManagerViewOrderLinesAll.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ManagerViewOrdersAll.xaml.cs">
+      <DependentUpon>ManagerViewOrdersAll.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ManagerViewPicksAll.xaml.cs">
+      <DependentUpon>ManagerViewPicksAll.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ManagerViewProductsAll.xaml.cs">
+      <DependentUpon>ManagerViewProductsAll.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ManagerViewReceiptLinesAll.xaml.cs">
+      <DependentUpon>ManagerViewReceiptLinesAll.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ManagerViewReceiptsAll.xaml.cs">
+      <DependentUpon>ManagerViewReceiptsAll.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ManagerViewStockAll.xaml.cs">
+      <DependentUpon>ManagerViewStockAll.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ManagerViewWarehousesAll.xaml.cs">
+      <DependentUpon>ManagerViewWarehousesAll.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Worker\WorkerHomepage.xaml.cs">
+      <DependentUpon>WorkerHomepage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Worker\WorkerViewAccounts.xaml.cs">
+      <DependentUpon>WorkerViewAccounts.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Worker\WorkerViewLocations.xaml.cs">
+      <DependentUpon>WorkerViewLocations.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Worker\WorkerViewOrderLines.xaml.cs">
+      <DependentUpon>WorkerViewOrderLines.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Worker\WorkerViewOrders.xaml.cs">
+      <DependentUpon>WorkerViewOrders.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Worker\WorkerViewPicks.xaml.cs">
+      <DependentUpon>WorkerViewPicks.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Worker\WorkerViewProducts.xaml.cs">
+      <DependentUpon>WorkerViewProducts.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Worker\WorkerViewReceiptLines.xaml.cs">
+      <DependentUpon>WorkerViewReceiptLines.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Worker\WorkerViewReceipts.xaml.cs">
+      <DependentUpon>WorkerViewReceipts.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Worker\WorkerViewStock.xaml.cs">
+      <DependentUpon>WorkerViewStock.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Worker\WorkerViewWarehouses.xaml.cs">
+      <DependentUpon>WorkerViewWarehouses.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Worker\WorkerWorkStockAdd.xaml.cs">
+      <DependentUpon>WorkerWorkStockAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Worker\WorkerWorkStockDelete.xaml.cs">
+      <DependentUpon>WorkerWorkStockDelete.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Admin\AdminManageAccountsAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Admin\AdminManageAccountsDelete.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Admin\AdminManageAccountsEdit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Admin\AdminManageUsersAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Admin\AdminManageUsersDelete.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Admin\AdminManageUsersEdit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Admin\AdminManageWarehousesAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Admin\AdminManageWarehousesDelete.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Admin\AdminManageWarehousesEdit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Admin\AdminViewAccountsAll.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Admin\AdminViewLocationsAll.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Admin\AdminViewUsersAdmins.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Admin\AdminViewUsersManagers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Admin\AdminViewUsersWorkers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Admin\AdminViewWarehousesAll.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="All\Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Admin\AdminHomepage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Admin\AdminViewUsersAll.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Manager\ManagerHomepage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Admin\AdminHomepage.xaml.cs">
+      <DependentUpon>AdminHomepage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="All\Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceReference1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Manager\ManagerManageOrderLinesAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Manager\ManagerManageOrderLinesDelete.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Manager\ManagerManageOrderLinesEdit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Manager\ManagerManageOrdersAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Manager\ManagerManageOrderLinesAllocate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Manager\ManagerManageOrdersDelete.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Manager\ManagerManageOrdersEdit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Manager\ManagerManagePicksDelete.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Manager\ManagerManageProductsAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Manager\ManagerManageProductsDelete.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Manager\ManagerManageProductsEdit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Manager\ManagerManageReceiptLinesAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Manager\ManagerManageReceiptLinesDelete.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Manager\ManagerManageReceiptLinesEdit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Manager\ManagerManageReceiptsAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Manager\ManagerManageReceiptsDelete.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Manager\ManagerManageReceiptsEdit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Manager\ManagerManageStockAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Manager\ManagerManageStockDelete.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Manager\ManagerManageStockEdit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Manager\ManagerViewAccountsAll.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Manager\ManagerViewLocationsAll.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Manager\ManagerViewOrderLinesAll.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Manager\ManagerViewOrdersAll.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Manager\ManagerViewPicksAll.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Manager\ManagerViewProductsAll.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Manager\ManagerViewReceiptLinesAll.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Manager\ManagerViewReceiptsAll.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Manager\ManagerViewStockAll.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Manager\ManagerViewWarehousesAll.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Worker\WorkerHomepage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Worker\WorkerViewAccounts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Worker\WorkerViewLocations.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Worker\WorkerViewOrderLines.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Worker\WorkerViewOrders.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Worker\WorkerViewPicks.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Worker\WorkerViewProducts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Worker\WorkerViewReceiptLines.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Worker\WorkerViewReceipts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Worker\WorkerViewStock.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Worker\WorkerViewWarehouses.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Worker\WorkerWorkStockAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Worker\WorkerWorkStockDelete.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="PresentationTierClassDiagram.cd" />
+    <None Include="Connected Services\ServiceReference1\DataEntityTier.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReference1\DataService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReference1\PresentationTier.ServiceReference1.CompositeType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference1\PresentationTier.ServiceReference1.GetAccountsAllResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference1\PresentationTier.ServiceReference1.GetDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference1\PresentationTier.ServiceReference1.GetDataUsingDataContractResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference1\PresentationTier.ServiceReference1.GetLocationsAllResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference1\PresentationTier.ServiceReference1.GetOrderLinesAllResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference1\PresentationTier.ServiceReference1.GetOrdersAllResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference1\PresentationTier.ServiceReference1.GetProductsAllResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference1\PresentationTier.ServiceReference1.GetReceiptLinesAllResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference1\PresentationTier.ServiceReference1.GetReceiptsAllResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference1\PresentationTier.ServiceReference1.GetStockAllResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference1\PresentationTier.ServiceReference1.GetUsersAdminsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference1\PresentationTier.ServiceReference1.GetUsersAllResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference1\PresentationTier.ServiceReference1.GetUsersManagersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference1\PresentationTier.ServiceReference1.GetUsersWorkersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference1\PresentationTier.ServiceReference1.GetWarehousesAllResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference1\PresentationTier.ServiceReference1.WMSDataSet.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceReference1\service.wsdl" />
+    <None Include="Connected Services\ServiceReference1\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReference1\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceReference1\WMSDataSet.xsd" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\DataEntityTier.WMSDataSet.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Images\aggregation.png" />
+    <Resource Include="Images\box.png" />
+    <Resource Include="Images\crm.png" />
+    <Resource Include="Images\pallet.png" />
+    <Resource Include="Images\product.png" />
+    <Resource Include="Images\relationship.png" />
+    <Resource Include="Images\shipping-and-delivery.png" />
+    <Resource Include="Images\storage.png" />
+    <Resource Include="Images\supplier.png" />
+    <Resource Include="Images\transport.png" />
+    <Resource Include="Images\warehouse.png" />
+    <Resource Include="Images\worker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ApplicationTier\ApplicationTier.csproj">
+      <Project>{08B26878-AFB3-4FCC-B207-CACDAE4A6902}</Project>
+      <Name>ApplicationTier</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ServiceReference1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReference1\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReference1\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\System.Runtime.WindowsRuntime.4.7.0\build\net461\System.Runtime.WindowsRuntime.targets" Condition="Exists('..\packages\System.Runtime.WindowsRuntime.4.7.0\build\net461\System.Runtime.WindowsRuntime.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\System.Runtime.WindowsRuntime.4.7.0\build\net461\System.Runtime.WindowsRuntime.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Runtime.WindowsRuntime.4.7.0\build\net461\System.Runtime.WindowsRuntime.targets'))" />
+  </Target>
+</Project>

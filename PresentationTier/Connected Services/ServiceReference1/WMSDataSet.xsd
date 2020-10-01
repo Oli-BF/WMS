@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://tempuri.org/WMSDataSet.xsd" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="http://tempuri.org/WMSDataSet.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/WMSDataSet.xsd" id="WMSDataSet" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="WMSDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="accounts">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" name="account_id" type="xs:int" />
+              <xs:element name="name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="locations">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" name="location_id" type="xs:int" />
+              <xs:element name="warehouse_id" type="xs:int" />
+              <xs:element name="location_code">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="allocated" type="xs:boolean" />
+              <xs:element minOccurs="0" name="put_sequence" type="xs:int" />
+              <xs:element minOccurs="0" name="pick_sequence" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="order_lines">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" name="order_line_id" type="xs:int" />
+              <xs:element name="order_id" type="xs:int" />
+              <xs:element name="product_id" type="xs:int" />
+              <xs:element name="quantity" type="xs:int" />
+              <xs:element minOccurs="0" name="date_added" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="orders">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" name="order_id" type="xs:int" />
+              <xs:element minOccurs="0" name="date_added" type="xs:dateTime" />
+              <xs:element name="order_reference">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="account_id" type="xs:int" />
+              <xs:element name="warehouse_id" type="xs:int" />
+              <xs:element name="status">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="dispatch_date" type="xs:dateTime" />
+              <xs:element name="first_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="last_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="address_line_1">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="address_line_2">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="city">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="postcode">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="products">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" name="product_id" type="xs:int" />
+              <xs:element name="account_id" type="xs:int" />
+              <xs:element name="title">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="sku">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="receipt_lines">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" name="receipt_line_id" type="xs:int" />
+              <xs:element name="receipt_id" type="xs:int" />
+              <xs:element name="product_id" type="xs:int" />
+              <xs:element name="quantity" type="xs:int" />
+              <xs:element minOccurs="0" name="date_added" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="receipts">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" name="receipt_id" type="xs:int" />
+              <xs:element minOccurs="0" name="date_added" type="xs:dateTime" />
+              <xs:element name="receipt_reference">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="acccount_id" type="xs:int" />
+              <xs:element name="warehouse_id" type="xs:int" />
+              <xs:element name="expected_date" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="recepited_date" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="stock">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" name="stock_id" type="xs:int" />
+              <xs:element name="acccount_id" type="xs:int" />
+              <xs:element name="product_id" type="xs:int" />
+              <xs:element name="warehouse_id" type="xs:int" />
+              <xs:element name="location_id" type="xs:int" />
+              <xs:element name="quantity" type="xs:int" />
+              <xs:element minOccurs="0" name="allocated_quantity" type="xs:int" />
+              <xs:element minOccurs="0" name="availability_status" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="users">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" name="user_id" type="xs:int" />
+              <xs:element name="first_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="last_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="telephone">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="email">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="role">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="password">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="warehouses">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" name="warehouse_id" type="xs:int" />
+              <xs:element name="name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique msdata:PrimaryKey="true" name="Constraint1">
+      <xs:selector xpath=".//mstns:accounts" />
+      <xs:field xpath="mstns:account_id" />
+    </xs:unique>
+    <xs:unique msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true" name="locations_Constraint1">
+      <xs:selector xpath=".//mstns:locations" />
+      <xs:field xpath="mstns:location_id" />
+    </xs:unique>
+    <xs:unique msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true" name="order_lines_Constraint1">
+      <xs:selector xpath=".//mstns:order_lines" />
+      <xs:field xpath="mstns:order_line_id" />
+    </xs:unique>
+    <xs:unique msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true" name="orders_Constraint1">
+      <xs:selector xpath=".//mstns:orders" />
+      <xs:field xpath="mstns:order_id" />
+    </xs:unique>
+    <xs:unique msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true" name="products_Constraint1">
+      <xs:selector xpath=".//mstns:products" />
+      <xs:field xpath="mstns:product_id" />
+    </xs:unique>
+    <xs:unique msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true" name="receipt_lines_Constraint1">
+      <xs:selector xpath=".//mstns:receipt_lines" />
+      <xs:field xpath="mstns:receipt_line_id" />
+    </xs:unique>
+    <xs:unique msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true" name="receipts_Constraint1">
+      <xs:selector xpath=".//mstns:receipts" />
+      <xs:field xpath="mstns:receipt_id" />
+    </xs:unique>
+    <xs:unique msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true" name="stock_Constraint1">
+      <xs:selector xpath=".//mstns:stock" />
+      <xs:field xpath="mstns:stock_id" />
+    </xs:unique>
+    <xs:unique msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true" name="users_Constraint1">
+      <xs:selector xpath=".//mstns:users" />
+      <xs:field xpath="mstns:user_id" />
+    </xs:unique>
+    <xs:unique msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true" name="warehouses_Constraint1">
+      <xs:selector xpath=".//mstns:warehouses" />
+      <xs:field xpath="mstns:warehouse_id" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FK__locations__wareh__4222D4EF" msdata:parent="warehouses" msdata:child="locations" msdata:parentkey="warehouse_id" msdata:childkey="warehouse_id" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" />
+      <msdata:Relationship name="FK__order_lin__order__4D94879B" msdata:parent="orders" msdata:child="order_lines" msdata:parentkey="order_id" msdata:childkey="order_id" />
+      <msdata:Relationship name="FK__order_lin__produ__4E88ABD4" msdata:parent="products" msdata:child="order_lines" msdata:parentkey="product_id" msdata:childkey="product_id" />
+      <msdata:Relationship name="FK__orders__account___4BAC3F29" msdata:parent="accounts" msdata:child="orders" msdata:parentkey="account_id" msdata:childkey="account_id" />
+      <msdata:Relationship name="FK__orders__warehous__4CA06362" msdata:parent="warehouses" msdata:child="orders" msdata:parentkey="warehouse_id" msdata:childkey="warehouse_id" />
+      <msdata:Relationship name="FK__products__accoun__4316F928" msdata:parent="accounts" msdata:child="products" msdata:parentkey="account_id" msdata:childkey="account_id" />
+      <msdata:Relationship name="FK__receipt_l__produ__4AB81AF0" msdata:parent="products" msdata:child="receipt_lines" msdata:parentkey="product_id" msdata:childkey="product_id" />
+      <msdata:Relationship name="FK__receipt_l__recei__49C3F6B7" msdata:parent="receipts" msdata:child="receipt_lines" msdata:parentkey="receipt_id" msdata:childkey="receipt_id" />
+      <msdata:Relationship name="FK__receipts__acccou__47DBAE45" msdata:parent="accounts" msdata:child="receipts" msdata:parentkey="account_id" msdata:childkey="acccount_id" />
+      <msdata:Relationship name="FK__receipts__wareho__48CFD27E" msdata:parent="warehouses" msdata:child="receipts" msdata:parentkey="warehouse_id" msdata:childkey="warehouse_id" />
+      <msdata:Relationship name="FK__stock__acccount___440B1D61" msdata:parent="accounts" msdata:child="stock" msdata:parentkey="account_id" msdata:childkey="acccount_id" />
+      <msdata:Relationship name="FK__stock__location___46E78A0C" msdata:parent="locations" msdata:child="stock" msdata:parentkey="location_id" msdata:childkey="location_id" />
+      <msdata:Relationship name="FK__stock__product_i__44FF419A" msdata:parent="products" msdata:child="stock" msdata:parentkey="product_id" msdata:childkey="product_id" />
+      <msdata:Relationship name="FK__stock__warehouse__45F365D3" msdata:parent="warehouses" msdata:child="stock" msdata:parentkey="warehouse_id" msdata:childkey="warehouse_id" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

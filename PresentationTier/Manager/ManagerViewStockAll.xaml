@@ -1,0 +1,58 @@
+﻿<Page x:Class="PresentationTier.Manager.ManagerViewStockAll"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PresentationTier.Manager"
+      mc:Ignorable="d" 
+      Title="ManagerViewStockAll" Background="White" >
+
+    <ScrollViewer x:Name="scrollViewer1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+
+        <Grid Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center" Height="980" Width="1900" >
+
+            <DataGrid  
+                x:Name="dataGrid1" EnableRowVirtualization="True" AutoGenerateColumns="False" 
+                IsReadOnly="True" CanUserAddRows="False" CanUserDeleteRows="False"
+                Margin="245,10,10,65" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" AlternatingRowBackground="#d5f1ff" AlternationCount="2"
+                RowDetailsVisibilityMode="VisibleWhenSelected" >
+                <DataGrid.Columns>
+                    <DataGridTextColumn x:Name="column1" Binding="{Binding stock_id}" Header="Stock ID" />
+                    <DataGridTextColumn x:Name="column2" Binding="{Binding account_id}" Header="Account ID" />
+                    <DataGridTextColumn x:Name="column3" Binding="{Binding name}" Header="Account Name" />
+                    <DataGridTextColumn x:Name="column4" Binding="{Binding product_id}" Header="Product ID" />
+                    <DataGridTextColumn x:Name="column5" Binding="{Binding title}" Header="Product Title" />
+                    <DataGridTextColumn x:Name="column6" Binding="{Binding sku}" Header="Product SKU" />
+                    <DataGridTextColumn x:Name="column7" Binding="{Binding warehouse_id}" Header="Warehouse ID" />
+                    <DataGridTextColumn x:Name="column9" Binding="{Binding location_id}" Header="Location ID" />
+                    <DataGridTextColumn x:Name="column10" Binding="{Binding location_code}" Header="Location Code" />
+                    <DataGridTextColumn x:Name="column11" Binding="{Binding quantity}" Header="Quantity" />
+                    <DataGridTextColumn x:Name="column12" Binding="{Binding allocated_quantity}" Header="Allocated Quantity" />
+                    <DataGridTextColumn x:Name="column13" Binding="{Binding availability_status}" Header="Availability Status" />
+                    <DataGridTextColumn x:Name="column14" Binding="{Binding date_added}" Header="Date Added" />
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <Rectangle x:Name="rectangle1" Fill="#FFF2F2F2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="1010" Width="250" Margin="-10,-10,1660,-20" />
+
+            <TextBlock x:Name="title1" Text="View Stock" FontSize="20" FontWeight="Bold" Margin="-10,10,1660,920" Padding="20,10,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="250" Height="50" />
+            <Button x:Name="button1" Content="Stock - All" FontSize="18" Style="{StaticResource AccentButtonStyle}" Background="{x:Null}" Foreground="Black" Margin="-10,65,1660,865" Padding="30,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Click="Button_Click1" />
+
+            <TextBlock x:Name="title2" Text="Manage Stock" FontSize="20" FontWeight="Bold" Margin="-10,120,1660,810" Padding="20,10,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="250" Height="50" />
+            <Button x:Name="button2" Content="Stock - Add" FontSize="18" Style="{StaticResource AccentButtonStyle}" Background="{x:Null}" Foreground="Black" Margin="-10,175,1660,755" Padding="30,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Click="Button_Click2" />
+            <Button x:Name="button3" Content="Stock - Delete" FontSize="18" Style="{StaticResource AccentButtonStyle}" Background="{x:Null}" Foreground="Black" Margin="-10,230,1660,700" Padding="30,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Click="Button_Click3" />
+            <Button x:Name="button4" Content="Stock - Edit" FontSize="18" Style="{StaticResource AccentButtonStyle}" Background="{x:Null}" Foreground="Black" Margin="-10,285,1660,645" Padding="30,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Click="Button_Click4" />
+
+            <TextBlock x:Name="title3" Text="View Locations" FontSize="20" FontWeight="Bold" Margin="-10,340,1660,590" Padding="20,10,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="250" Height="50" />
+            <Button x:Name="button5" Content="Locations - All" FontSize="18" Style="{StaticResource AccentButtonStyle}" Background="{x:Null}" Foreground="Black" Margin="-10,395,1660,535" Padding="30,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Click="Button_Click5" />
+
+            <TextBlock x:Name="title4" Text="View Warehouses" FontSize="20" FontWeight="Bold" Margin="-10,450,1660,480" Padding="20,10,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="250" Height="50" />
+            <Button x:Name="button6" Content="Warehouses - All" FontSize="18" Style="{StaticResource AccentButtonStyle}" Background="{x:Null}" Foreground="Black" Margin="-10,505,1660,425" Padding="30,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Click="Button_Click6" />
+
+            <Button x:Name="printButton" Content="Print" Style="{StaticResource AccentButtonStyle}" FontSize="24" FontWeight="Bold" Margin="1033,920,743,10" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="124" Click="Print_Button_Click"/>
+
+            <Button x:Name="backButton" Content="&lt;-" Style="{StaticResource AccentButtonStyle}" FontSize="24" FontWeight="Bold" Margin="10,920,1840,10" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="50" Click="Back_Button_Click"/>
+
+        </Grid>
+    </ScrollViewer>
+</Page>

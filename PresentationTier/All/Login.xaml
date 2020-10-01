@@ -1,0 +1,25 @@
+﻿<Page 
+    x:Class="PresentationTier.Login"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    mc:Ignorable="d" 
+    Title="All-Login" Background="White">
+
+    <ScrollViewer x:Name="scrollViewer1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" >
+    
+        <Grid Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center" Height="980" Width="1900" >
+            <Image x:Name="companyLogo" Source="/PresentationTier;component/Images/shipping-and-delivery.png" Margin="565,25,1085,705" HorizontalAlignment="Center" VerticalAlignment="Center" Height="250" Width="250"/>
+            <TextBlock x:Name="companyName" Text="BitByBit Warehouse Management System" FontSize="48" FontWeight="Bold" FontFamily="Segoe Print" TextWrapping="Wrap" Margin="815,94,565,726" HorizontalAlignment="Center" VerticalAlignment="Center" Height="160" Width="520"/>
+            <RadioButton x:Name="radioButton1" Content="Worker" FontSize="16" FontWeight="Bold" Margin="746,407,1034,543" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="120" Checked="RadioButton_Checked1"/>
+            <RadioButton x:Name="radioButton2" Content="Manager" FontSize="16" FontWeight="Bold" Margin="890,407,890,543" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="120" Checked="RadioButton_Checked2"/>
+            <RadioButton x:Name="radioButton3" Content="Admin" FontSize="16" FontWeight="Bold" Margin="1045,407,735,543" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="120" Checked="RadioButton_Checked3"/>
+            <Label x:Name="emailLabel" Content="Email" FontWeight="Bold" Margin="825,535,995,425" HorizontalAlignment="Center" VerticalAlignment="Center" Height="20" Width="80" FontSize="16" RenderTransformOrigin="0.592,0.483"/>
+            <TextBox x:Name="emailInput" TextWrapping="Wrap" Margin="825,560,825,384" HorizontalAlignment="Center" VerticalAlignment="Center" Height="36" Width="250" FontSize="16"/>
+            <Label x:Name="passwordLabel" Content="Password" FontWeight="Bold" Margin="825,659,995,301" HorizontalAlignment="Center" VerticalAlignment="Center" Height="20" Width="80" FontSize="16" />
+            <PasswordBox x:Name="passwordInput" Margin="825,684,825,260" HorizontalAlignment="Center" VerticalAlignment="Center" Height="36" Width="250" FontSize="16" />
+            <Button x:Name="loginButton" Content="Login" FontWeight="Bold" Style="{StaticResource AccentButtonStyle}" Margin="825,797,825,147" HorizontalAlignment="Center" VerticalAlignment="Center" Height="36" Width="250" Click="Button_Click" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="16" />
+        </Grid>
+    </ScrollViewer>
+</Page>

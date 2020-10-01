@@ -1,0 +1,68 @@
+﻿<Page x:Class="PresentationTier.Manager.ManagerManageStockEdit"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PresentationTier.Manager"
+      mc:Ignorable="d" 
+      Title="ManagerManageStockEdit" Background="White" >
+
+    <ScrollViewer x:Name="scrollViewer1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" >
+
+        <Grid Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center" Height="980" Width="1900" >
+
+            <Rectangle x:Name="rectangle1" Fill="#FFF2F2F2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="1010" Width="250" Margin="-10,-10,1660,-20" />
+
+            <TextBlock x:Name="title1" Text="View Stock" FontSize="20" FontWeight="Bold" Margin="-10,10,1660,920" Padding="20,10,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="250" Height="50" />
+            <Button x:Name="button1" Content="Stock - All" FontSize="18" Style="{StaticResource AccentButtonStyle}" Background="{x:Null}" Foreground="Black" Margin="-10,65,1660,865" Padding="30,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Click="Button_Click1" />
+
+            <TextBlock x:Name="title2" Text="Manage Stock" FontSize="20" FontWeight="Bold" Margin="-10,120,1660,810" Padding="20,10,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="250" Height="50" />
+            <Button x:Name="button2" Content="Stock - Add" FontSize="18" Style="{StaticResource AccentButtonStyle}" Background="{x:Null}" Foreground="Black" Margin="-10,175,1660,755" Padding="30,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Click="Button_Click2" />
+            <Button x:Name="button3" Content="Stock - Delete" FontSize="18" Style="{StaticResource AccentButtonStyle}" Background="{x:Null}" Foreground="Black" Margin="-10,230,1660,700" Padding="30,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Click="Button_Click3" />
+            <Button x:Name="button4" Content="Stock - Edit" FontSize="18" Style="{StaticResource AccentButtonStyle}" Background="{x:Null}" Foreground="Black" Margin="-10,285,1660,645" Padding="30,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Click="Button_Click4" />
+
+            <TextBlock x:Name="title3" Text="View Locations" FontSize="20" FontWeight="Bold" Margin="-10,340,1660,590" Padding="20,10,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="250" Height="50" />
+            <Button x:Name="button5" Content="Locations - All" FontSize="18" Style="{StaticResource AccentButtonStyle}" Background="{x:Null}" Foreground="Black" Margin="-10,395,1660,535" Padding="30,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Click="Button_Click5" />
+
+            <TextBlock x:Name="title4" Text="View Warehouses" FontSize="20" FontWeight="Bold" Margin="-10,450,1660,480" Padding="20,10,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="250" Height="50" />
+            <Button x:Name="button6" Content="Warehouses - All" FontSize="18" Style="{StaticResource AccentButtonStyle}" Background="{x:Null}" Foreground="Black" Margin="-10,505,1660,425" Padding="30,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Click="Button_Click6" />
+
+            <Button x:Name="backButton" Content="&lt;-" Style="{StaticResource AccentButtonStyle}" FontSize="24" FontWeight="Bold" Margin="10,920,1840,10" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="50" Click="Back_Button_Click"/>
+
+            <TextBlock x:Name="title5" FontSize="24" Margin="310,10,1090,921" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="500" Padding="0,7,0,0" ><Run Text="Edit Current Stock - Use "/><Run Text="W"/><Run Text="ith "/><Run Text="C"/><Run Text="are"/></TextBlock>
+
+            <Label x:Name="label1" Content="Current Stock ID" Margin="310,111,1340,849" HorizontalAlignment="Center" VerticalAlignment="Center" Height="20" Width="250" FontSize="16" RenderTransformOrigin="0.592,0.483"/>
+            <TextBox x:Name="currentStockIdInput" TextWrapping="Wrap" Margin="310,136,1340,809" HorizontalAlignment="Center" VerticalAlignment="Center" Height="35" Width="250" FontSize="16"/>
+
+            <Label x:Name="label2" Content="Current Warehouse ID" Margin="310,252,1340,708" HorizontalAlignment="Center" VerticalAlignment="Center" Height="20" Width="250" FontSize="16" RenderTransformOrigin="0.592,0.483"/>
+            <TextBox x:Name="currentWarehouseIdInput" TextWrapping="Wrap" Margin="310,277,1340,668" HorizontalAlignment="Center" VerticalAlignment="Center" Height="35" Width="250" FontSize="16"/>
+
+            <Label x:Name="label3" Content="Current Location ID" Margin="310,392,1340,568" HorizontalAlignment="Center" VerticalAlignment="Center" Height="20" Width="250" FontSize="16" RenderTransformOrigin="0.592,0.483"/>
+            <TextBox x:Name="currentLocationIdInput" TextWrapping="Wrap" Margin="310,417,1340,528" HorizontalAlignment="Center" VerticalAlignment="Center" Height="35" Width="250" FontSize="16"/>
+            
+            <Label x:Name="label4" Content="New Account ID" Margin="720,111,932,849" HorizontalAlignment="Center" VerticalAlignment="Center" Height="20" Width="250" FontSize="16" RenderTransformOrigin="0.592,0.483"/>
+            <TextBox x:Name="newAccountIdInput" TextWrapping="Wrap" Margin="719,136,931,809" HorizontalAlignment="Center" VerticalAlignment="Center" Height="35" Width="250" FontSize="16"/>
+
+            <Label x:Name="label5" Content="New Product ID" Margin="720,252,930,708" HorizontalAlignment="Center" VerticalAlignment="Center" Height="20" Width="250" FontSize="16" RenderTransformOrigin="0.592,0.483"/>
+            <TextBox x:Name="newProductIdInput" TextWrapping="Wrap" Margin="720,277,930,668" HorizontalAlignment="Center" VerticalAlignment="Center" Height="35" Width="250" FontSize="16"/>
+
+            <Label x:Name="label6" Content="New Warehouse ID" Margin="720,392,930,568" HorizontalAlignment="Center" VerticalAlignment="Center" Height="20" Width="250" FontSize="16" RenderTransformOrigin="0.592,0.483"/>
+            <TextBox x:Name="newWarehouseIdInput" TextWrapping="Wrap" Margin="720,417,930,529" HorizontalAlignment="Center" VerticalAlignment="Center" Height="34" Width="250" FontSize="16"/>
+
+            <Label x:Name="label7" Content="New Location ID" Margin="720,532,930,428" HorizontalAlignment="Center" VerticalAlignment="Center" Height="20" Width="250" FontSize="16" RenderTransformOrigin="0.592,0.483"/>
+            <TextBox x:Name="newLocationIdInput" TextWrapping="Wrap" Margin="720,557,930,389" HorizontalAlignment="Center" VerticalAlignment="Center" Height="34" Width="250" FontSize="16"/>
+
+            <Label x:Name="label8" Content="New Quantity" Margin="720,672,930,288" HorizontalAlignment="Center" VerticalAlignment="Center" Height="20" Width="250" FontSize="16" RenderTransformOrigin="0.592,0.483"/>
+            <TextBox x:Name="newQuantityInput" TextWrapping="Wrap" Margin="720,697,930,249" HorizontalAlignment="Center" VerticalAlignment="Center" Height="34" Width="250" FontSize="16"/>
+
+            <Label x:Name="label9" Content="New Allocated Quantity" Margin="720,812,930,148" HorizontalAlignment="Center" VerticalAlignment="Center" Height="20" Width="250" FontSize="16" RenderTransformOrigin="0.592,0.483"/>
+            <TextBox x:Name="newAllocatedQuantityInput" Margin="720,837,930,109" HorizontalAlignment="Center" VerticalAlignment="Center" Height="34" Width="250" FontSize="16"/>
+
+            <Label x:Name="label10" Content="New Availability Status" Margin="1130,111,520,849" HorizontalAlignment="Center" VerticalAlignment="Center" Height="20" Width="250" FontSize="16" RenderTransformOrigin="0.592,0.483"/>
+            <TextBox x:Name="newAvailabilityStatusInput" Margin="1130,136,520,809" HorizontalAlignment="Center" VerticalAlignment="Center" Height="35" Width="250" FontSize="16"/>
+
+            <Button x:Name="label30" Content="Edit" Style="{StaticResource AccentButtonStyle}" FontSize="24" FontWeight="Bold" Margin="1716,890,60,40" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="124" Click="EditButton_Click"/>
+
+        </Grid>
+    </ScrollViewer>
+</Page>

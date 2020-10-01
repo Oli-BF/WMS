@@ -1,0 +1,55 @@
+﻿<Page x:Class="PresentationTier.Manager.ManagerManageReceiptsDelete"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PresentationTier.Manager"
+      xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+      mc:Ignorable="d" 
+      Title="ManagerManageReceiptsDelete" Background="White" >
+
+    <ScrollViewer x:Name="scrollViewer1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" >
+
+        <Grid Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center" Height="980" Width="1900" >
+
+            <Rectangle x:Name="rectangle1" Fill="#FFF2F2F2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="1010" Width="250" Margin="-10,-10,1660,-20" />
+
+            <TextBlock x:Name="title1" Text="View Receipts" FontSize="20" FontWeight="Bold" Margin="-10,10,1660,920" Padding="20,10,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="250" Height="50" />
+            <Button x:Name="button1" Content="Receipts - All" FontSize="18" Style="{StaticResource AccentButtonStyle}" Background="{x:Null}" Foreground="Black" Margin="-10,65,1660,865" Padding="30,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Click="Button_Click1" />
+
+            <TextBlock x:Name="title2" Text="Manage Receipts" FontSize="20" FontWeight="Bold" Margin="-10,120,1660,810" Padding="20,10,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="250" Height="50" />
+            <Button x:Name="button2" Content="Receipts - Add" FontSize="18" Style="{StaticResource AccentButtonStyle}" Background="{x:Null}" Foreground="Black" Margin="-10,175,1660,755" Padding="30,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Click="Button_Click2" />
+            <Button x:Name="button3" Content="Receipts - Delete" FontSize="18" Style="{StaticResource AccentButtonStyle}" Background="{x:Null}" Foreground="Black" Margin="-10,230,1660,700" Padding="30,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Click="Button_Click3" />
+            <Button x:Name="button4" Content="Receipts - Edit" FontSize="18" Style="{StaticResource AccentButtonStyle}" Background="{x:Null}" Foreground="Black" Margin="-10,285,1660,645" Padding="30,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Click="Button_Click4" />
+
+            <TextBlock x:Name="title3" Text="View Receipt Lines" FontSize="20" FontWeight="Bold" Margin="-10,340,1660,590" Padding="20,10,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="250" Height="50" />
+            <Button x:Name="button5" Content="Receipt Lines - All" FontSize="18" Style="{StaticResource AccentButtonStyle}" Background="{x:Null}" Foreground="Black" Margin="-10,395,1660,535" Padding="30,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Click="Button_Click5" />
+
+            <TextBlock x:Name="title4" Text="Manage Receipt Lines" FontSize="20" FontWeight="Bold" Margin="-10,450,1660,480" Padding="20,10,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="250" Height="50" />
+            <Button x:Name="button6" Content="Receipt Lines - Add" FontSize="18" Style="{StaticResource AccentButtonStyle}" Background="{x:Null}" Foreground="Black" Margin="-10,505,1660,425" Padding="30,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Click="Button_Click6" />
+            <Button x:Name="button7" Content="Receipt Lines - Delete" FontSize="18" Style="{StaticResource AccentButtonStyle}" Background="{x:Null}" Foreground="Black" Margin="-10,560,1660,370" Padding="30,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Click="Button_Click7" />
+            <Button x:Name="button8" Content="Receipt Lines - Edit" FontSize="18" Style="{StaticResource AccentButtonStyle}" Background="{x:Null}" Foreground="Black" Margin="-10,615,1660,315" Padding="30,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Click="Button_Click8" />
+
+            <Button x:Name="backButton" Content="&lt;-" Style="{StaticResource AccentButtonStyle}" FontSize="24" FontWeight="Bold" Margin="10,920,1840,10" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="50" Click="Back_Button_Click"/>
+
+            <TextBlock x:Name="title5" Text="Delete Current Receipt" FontSize="24" Margin="310,10,1090,921" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="500" Padding="0,7,0,0" />
+
+            <Label x:Name="label1" Content="Receipt Reference" Margin="310,111,1340,849" HorizontalAlignment="Center" VerticalAlignment="Center" Height="20" Width="250" FontSize="16" RenderTransformOrigin="0.592,0.483"/>
+            <TextBox x:Name="receiptReferenceInput" TextWrapping="Wrap" Margin="310,136,1340,809" HorizontalAlignment="Center" VerticalAlignment="Center" Height="35" Width="250" FontSize="16"/>
+
+            <Label x:Name="label2" Content="Account ID" Margin="310,252,1340,708" HorizontalAlignment="Center" VerticalAlignment="Center" Height="20" Width="250" FontSize="16" RenderTransformOrigin="0.592,0.483"/>
+            <TextBox x:Name="accountIdInput" TextWrapping="Wrap" Margin="310,277,1340,668" HorizontalAlignment="Center" VerticalAlignment="Center" Height="35" Width="250" FontSize="16"/>
+
+            <Label x:Name="label3" Content="Warehouse ID" Margin="310,392,1340,568" HorizontalAlignment="Center" VerticalAlignment="Center" Height="20" Width="250" FontSize="16" RenderTransformOrigin="0.592,0.483"/>
+            <TextBox x:Name="warehouseIdInput" TextWrapping="Wrap" Margin="310,417,1340,529" HorizontalAlignment="Center" VerticalAlignment="Center" Height="34" Width="250" FontSize="16"/>
+
+            <Label x:Name="label4" Content="Expected Date" Margin="310,532,1340,428" HorizontalAlignment="Center" VerticalAlignment="Center" Height="20" Width="250" FontSize="16" RenderTransformOrigin="0.592,0.483"/>
+            <xctk:DateTimePicker x:Name="expectedDateInput" Format="Custom" FormatString="dd-MM-yyyy HH:mm" HorizontalAlignment="Center" Margin="310,557,1340,388" VerticalAlignment="Center" Width="250" Height="35" BorderBrush="#99000000" Background="#66FFFFFF" HorizontalContentAlignment="Center" UseLayoutRounding="False" FontSize="16"/>
+
+            <TextBlock HorizontalAlignment="Left" Height="35" Margin="310,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250"><Run Text="All relating Receipt Lines must be deleted first."/></TextBlock>
+
+            <Button x:Name="label30" Content="Delete" Style="{StaticResource AccentButtonStyle}" FontSize="24" FontWeight="Bold" Margin="1716,890,60,40" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="124" Click="DeleteButton_Click"/>
+
+        </Grid>
+    </ScrollViewer>
+</Page>

@@ -1,0 +1,76 @@
+﻿<Page x:Class="PresentationTier.Admin.AdminManageUsersEdit"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PresentationTier.Admin"
+      mc:Ignorable="d" 
+      Title="AdminManageUsersEdit" Background="White" >
+
+    <ScrollViewer x:Name="scrollViewer1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" >
+
+        <Grid Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center" Height="980" Width="1900" >
+
+            <Rectangle x:Name="rectangle1" Fill="#FFF2F2F2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="1010" Width="250" Margin="-10,-10,1660,-20" />
+
+            <TextBlock x:Name="title1" Text="View Users" FontSize="20" FontWeight="Bold" Margin="-10,10,1660,920" Padding="20,10,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="250" Height="50" />
+            <Button x:Name="button1" Content="Users - All" FontSize="18" Style="{StaticResource AccentButtonStyle}" Background="{x:Null}" Foreground="Black" Margin="-10,65,1660,865" Padding="30,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Click="Button_Click1" />
+            <Button x:Name="button2" Content="Users - Workers" FontSize="18" Style="{StaticResource AccentButtonStyle}" Background="{x:Null}" Foreground="Black" Margin="-10,120,1660,810" Padding="30,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Click="Button_Click2" />
+            <Button x:Name="button3" Content="Users - Managers" FontSize="18" Style="{StaticResource AccentButtonStyle}" Background="{x:Null}" Foreground="Black" Margin="-10,175,1660,755" Padding="30,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Click="Button_Click3" />
+            <Button x:Name="button4" Content="Users - Admin" FontSize="18" Style="{StaticResource AccentButtonStyle}" Background="{x:Null}" Foreground="Black" Margin="-10,230,1660,700" Padding="30,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Click="Button_Click4" />
+
+            <TextBlock x:Name="title2" Text="Manage Users" FontSize="20" FontWeight="Bold" Margin="-10,285,1660,645" Padding="20,10,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="250" Height="50" />
+            <Button x:Name="button5" Content="Users - Add" FontSize="18" Style="{StaticResource AccentButtonStyle}" Background="{x:Null}" Foreground="Black" Margin="-10,340,1660,590" Padding="30,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Click="Button_Click5" />
+            <Button x:Name="button6" Content="Users - Delete" FontSize="18" Style="{StaticResource AccentButtonStyle}" Background="{x:Null}" Foreground="Black" Margin="-10,395,1660,535" Padding="30,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Click="Button_Click6" />
+            <Button x:Name="button7" Content="Users - Edit" FontSize="18" Style="{StaticResource AccentButtonStyle}" Background="{x:Null}" Foreground="Black" Margin="-10,450,1660,480" Padding="30,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="250" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Click="Button_Click7" />
+
+            <Button x:Name="backButton" Content="&lt;-" Style="{StaticResource AccentButtonStyle}" FontSize="24" FontWeight="Bold" Margin="10,920,1840,10" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="50" Click="Back_Button_Click"/>
+
+            <TextBlock x:Name="title3" FontSize="24" Margin="310,10,1090,921" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="500" Padding="0,7,0,0" ><Run Text="Edit "/><Run Text="Current"/><Run Text=" User"/></TextBlock>
+
+            <Label x:Name="label1" Content="Current First Name" Margin="310,111,1340,849" HorizontalAlignment="Center" VerticalAlignment="Center" Height="20" Width="250" FontSize="16" RenderTransformOrigin="0.592,0.483"/>
+            <TextBox x:Name="currentFirstNameInput" TextWrapping="Wrap" Margin="310,136,1340,809" HorizontalAlignment="Center" VerticalAlignment="Center" Height="35" Width="250" FontSize="16"/>
+
+            <Label x:Name="label2" Content="New First Name" Margin="720,111,930,849" HorizontalAlignment="Center" VerticalAlignment="Center" Height="20" Width="250" FontSize="16" RenderTransformOrigin="0.592,0.483"/>
+            <TextBox x:Name="newFirstNameInput" TextWrapping="Wrap" Margin="720,136,930,809" HorizontalAlignment="Center" VerticalAlignment="Center" Height="35" Width="250" FontSize="16"/>
+            
+            <Label x:Name="label3" Content="Current Last Name" Margin="310,252,1340,708" HorizontalAlignment="Center" VerticalAlignment="Center" Height="20" Width="250" FontSize="16" RenderTransformOrigin="0.592,0.483"/>
+            <TextBox x:Name="currentLastNameInput" TextWrapping="Wrap" Margin="310,277,1340,668" HorizontalAlignment="Center" VerticalAlignment="Center" Height="35" Width="250" FontSize="16"/>
+
+            <Label x:Name="label4" Content="New Last Name" Margin="720,252,930,708" HorizontalAlignment="Center" VerticalAlignment="Center" Height="20" Width="250" FontSize="16" RenderTransformOrigin="0.592,0.483"/>
+            <TextBox x:Name="newLastNameInput" TextWrapping="Wrap" Margin="720,277,930,668" HorizontalAlignment="Center" VerticalAlignment="Center" Height="35" Width="250" FontSize="16"/>
+            
+            <Label x:Name="label5" Content="Current Telephone" Margin="310,392,1340,568" HorizontalAlignment="Center" VerticalAlignment="Center" Height="20" Width="250" FontSize="16" RenderTransformOrigin="0.592,0.483"/>
+            <TextBox x:Name="currentTelephoneInput" TextWrapping="Wrap" Margin="310,417,1340,529" HorizontalAlignment="Center" VerticalAlignment="Center" Height="34" Width="250" FontSize="16"/>
+
+            <Label x:Name="label6" Content="New Telephone" Margin="720,392,930,568" HorizontalAlignment="Center" VerticalAlignment="Center" Height="20" Width="250" FontSize="16" RenderTransformOrigin="0.592,0.483"/>
+            <TextBox x:Name="newTelephoneInput" TextWrapping="Wrap" Margin="720,417,930,529" HorizontalAlignment="Center" VerticalAlignment="Center" Height="34" Width="250" FontSize="16"/>
+            
+            <Label x:Name="label7" Content="Current Email" Margin="310,532,1340,428" HorizontalAlignment="Center" VerticalAlignment="Center" Height="20" Width="250" FontSize="16" RenderTransformOrigin="0.592,0.483"/>
+            <TextBox x:Name="currentEmailInput" TextWrapping="Wrap" Margin="310,557,1340,389" HorizontalAlignment="Center" VerticalAlignment="Center" Height="34" Width="250" FontSize="16"/>
+
+            <Label x:Name="label8" Content="New Email" Margin="720,532,930,428" HorizontalAlignment="Center" VerticalAlignment="Center" Height="20" Width="250" FontSize="16" RenderTransformOrigin="0.592,0.483"/>
+            <TextBox x:Name="newEmailInput" TextWrapping="Wrap" Margin="720,557,930,389" HorizontalAlignment="Center" VerticalAlignment="Center" Height="34" Width="250" FontSize="16"/>
+            
+            <Label x:Name="label9" Content="Current Role" Margin="310,672,1340,288" HorizontalAlignment="Center" VerticalAlignment="Center" Height="20" Width="250" FontSize="16" RenderTransformOrigin="0.592,0.483"/>
+            <TextBox x:Name="currentRoleInput" TextWrapping="Wrap" Margin="310,697,1340,249" HorizontalAlignment="Center" VerticalAlignment="Center" Height="34" Width="250" FontSize="16"/>
+
+            <Label x:Name="label10" Content="New Role" Margin="720,672,930,288" HorizontalAlignment="Center" VerticalAlignment="Center" Height="20" Width="250" FontSize="16" RenderTransformOrigin="0.592,0.483"/>
+            <TextBox x:Name="newRoleInput" TextWrapping="Wrap" Margin="720,697,930,249" HorizontalAlignment="Center" VerticalAlignment="Center" Height="34" Width="250" FontSize="16"/>
+
+            <Label x:Name="label11" Content="Current Password" Margin="310,812,1340,148" HorizontalAlignment="Center" VerticalAlignment="Center" Height="20" Width="250" FontSize="16" RenderTransformOrigin="0.592,0.483"/>
+            <PasswordBox x:Name="currentPasswordInput" Margin="310,837,1340,109" HorizontalAlignment="Center" VerticalAlignment="Center" Height="34" Width="250" FontSize="16"/>
+
+            <Label x:Name="label12" Content="New Password" Margin="720,812,930,148" HorizontalAlignment="Center" VerticalAlignment="Center" Height="20" Width="250" FontSize="16" RenderTransformOrigin="0.592,0.483"/>
+            <PasswordBox x:Name="newPasswordInput" Margin="720,837,930,109" HorizontalAlignment="Center" VerticalAlignment="Center" Height="34" Width="250" FontSize="16"/>
+
+            <Button x:Name="label30" Content="Edit" Style="{StaticResource AccentButtonStyle}" FontSize="24" FontWeight="Bold" Margin="1716,890,60,40" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="124" Click="EditButton_Click"/>
+            
+            
+            
+            
+            
+
+        </Grid>
+    </ScrollViewer>
+</Page>

@@ -1,0 +1,31 @@
+﻿<Page 
+    x:Class="PresentationTier.Admin.AdminHomepage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:local="clr-namespace:PresentationTier.Admin"
+    mc:Ignorable="d" 
+    Title="AdminHomepage" Background="White" >
+
+    <ScrollViewer x:Name="scrollViewer1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" >
+        
+            <Grid Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center" Height="980" Width="1900" >
+                <TextBlock x:Name="titleTextBlock" Text="Please select an option:" FontSize="48" Margin="0,-355,0,535" HorizontalAlignment="Center" VerticalAlignment="Center" Height="70" Width="510" />
+
+                <Image x:Name="usersImage" Source="/PresentationTier;component/Images/worker.png" Margin="265,175,1385,555" HorizontalAlignment="Center" VerticalAlignment="Center" Height="250" Width="250"/>
+                <Button x:Name="usersButton" Content="Users" Style="{StaticResource AccentButtonStyle}" FontSize="36" FontWeight="Bold" Margin="530,262,1144,642" HorizontalAlignment="Center" VerticalAlignment="Center" Height="76" Width="226" Click="Button_Click1"/>
+
+                <Image x:Name="accountsImage" Source="/PresentationTier;component/Images/supplier.png" Margin="1129,175,521,555" HorizontalAlignment="Center" VerticalAlignment="Center" Height="250" Width="250"/>
+                <Button x:Name="accountsButton" Content="Accounts" Style="{StaticResource AccentButtonStyle}" FontSize="36" FontWeight="Bold" Margin="1412,262,262,642" HorizontalAlignment="Center" VerticalAlignment="Center" Height="76" Width="226" Click="Button_Click2"/>
+
+                <Image x:Name="warehousesImage" Source="/PresentationTier;component/Images/warehouse.png" Margin="265,655,1385,75" HorizontalAlignment="Center" VerticalAlignment="Center" Height="250" Width="250"/>
+                <Button x:Name="warehousesButton" Content="Warehouses" Style="{StaticResource AccentButtonStyle}" FontSize="36" FontWeight="Bold" Margin="530,758,1144,146" HorizontalAlignment="Center" VerticalAlignment="Center" Height="76" Width="226" Click="Button_Click3"/>
+
+                <Image x:Name="locationsImage" Source="/PresentationTier;component/Images/storage.png" Margin="1129,655,521,75" HorizontalAlignment="Center" VerticalAlignment="Center" Height="250" Width="250"/>
+                <Button x:Name="locationsButton" Content="Locations" Style="{StaticResource AccentButtonStyle}" FontSize="36" FontWeight="Bold" Margin="1412,758,262,146" HorizontalAlignment="Center" VerticalAlignment="Center" Height="76" Width="226" Click="Button_Click4"/>
+
+            <Button x:Name="logOutButton" Content="Log Out" Style="{StaticResource AccentButtonStyle}" FontSize="24" FontWeight="Bold" Margin="10,10,1765,920" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="125" Click="Button_Click5"/>
+        </Grid>
+    </ScrollViewer>
+</Page>

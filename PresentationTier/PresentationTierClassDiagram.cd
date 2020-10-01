@@ -1,0 +1,520 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PresentationTier.Admin.AdminHomepage" BaseTypeListCollapsed="true">
+    <Position X="3" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAmAYAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Admin\AdminHomepage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Admin.AdminManageAccountsAdd" BaseTypeListCollapsed="true">
+    <Position X="7.25" Y="4.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAkAYAAAAAAAAAAAAAADAAAAAAAAAAAAA=</HashCode>
+      <FileName>Admin\AdminManageAccountsAdd.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Admin.AdminManageAccountsDelete" BaseTypeListCollapsed="true">
+    <Position X="9.75" Y="4.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAkAYAAAAAAAAEAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Admin\AdminManageAccountsDelete.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Admin.AdminManageAccountsEdit" BaseTypeListCollapsed="true">
+    <Position X="12.25" Y="4.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAkAYAAAAAAAAAAAAAABAAAEAAAAAAAAA=</HashCode>
+      <FileName>Admin\AdminManageAccountsEdit.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Admin.AdminManageUsersAdd" BaseTypeListCollapsed="true">
+    <Position X="14" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAA+AYAAAAAAAAAAAAAADAAAAAAAAAAAAA=</HashCode>
+      <FileName>Admin\AdminManageUsersAdd.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Admin.AdminManageUsersDelete" BaseTypeListCollapsed="true">
+    <Position X="16.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAA+AYAAAAAAAAEAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Admin\AdminManageUsersDelete.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Admin.AdminManageUsersEdit" BaseTypeListCollapsed="true">
+    <Position X="18.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAA+AYAAAAAAAAAAAAAABAAAEAAAAAAAAA=</HashCode>
+      <FileName>Admin\AdminManageUsersEdit.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Admin.AdminManageWarehousesAdd" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="7.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAkAYAAAAAAAAAAAAAADAAAAAAAAAAAAA=</HashCode>
+      <FileName>Admin\AdminManageWarehousesAdd.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Admin.AdminManageWarehousesDelete" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="7.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAkAYAAAAAAAAEAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Admin\AdminManageWarehousesDelete.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Admin.AdminManageWarehousesEdit" BaseTypeListCollapsed="true">
+    <Position X="13" Y="7.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAkAYAAAAAAAAAAAAAABAAAEAAAAAAAAA=</HashCode>
+      <FileName>Admin\AdminManageWarehousesEdit.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Admin.AdminViewAccountsAll" BaseTypeListCollapsed="true">
+    <Position X="5" Y="4.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAkAYAAAAAAAAAAAAAABAAAAAAAAAAgAA=</HashCode>
+      <FileName>Admin\AdminViewAccountsAll.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Admin.AdminViewLocationsAll" BaseTypeListCollapsed="true">
+    <Position X="5" Y="11" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAgAAAAAAAAAAAAAAAABAAAAAAAAAAgAA=</HashCode>
+      <FileName>Admin\AdminViewLocationsAll.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Admin.AdminViewUsersAdmins" BaseTypeListCollapsed="true">
+    <Position X="11.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAA+AYAAAAAAAAAAAAAABAAAAAAAAAAgAA=</HashCode>
+      <FileName>Admin\AdminViewUsersAdmins.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Admin.AdminViewUsersAll" BaseTypeListCollapsed="true">
+    <Position X="5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAA+AYAAAAAAAAAAAAAABAAAAAAAAAAgAA=</HashCode>
+      <FileName>Admin\AdminViewUsersAll.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Admin.AdminViewUsersManagers" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAA+AYAAAAAAAAAAAAAABAAAAAAAAAAgAA=</HashCode>
+      <FileName>Admin\AdminViewUsersManagers.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Admin.AdminViewUsersWorkers" BaseTypeListCollapsed="true">
+    <Position X="7" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAA+AYAAAAAAAAAAAAAABAAAAAAAAAAgAA=</HashCode>
+      <FileName>Admin\AdminViewUsersWorkers.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Admin.AdminViewWarehousesAll" BaseTypeListCollapsed="true">
+    <Position X="5" Y="7.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAkAYAAAAAAIAAAAAAABAAAAAAAAAAgAA=</HashCode>
+      <FileName>Admin\AdminViewWarehousesAll.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Login" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="7.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AICAAAAAAAAgAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>All\Login.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.MainWindow" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="5.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Manager.ManagerHomepage" BaseTypeListCollapsed="true">
+    <Position X="3" Y="27" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAmAYAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Manager\ManagerHomepage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Manager.ManagerManageOrderLinesAdd" BaseTypeListCollapsed="true">
+    <Position X="17.75" Y="38.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AgCAAAAAAAAA+IYBAAAAAAAAAAQAADAAAAAAAAAAAAA=</HashCode>
+      <FileName>Manager\ManagerManageOrderLinesAdd.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Manager.ManagerManageOrderLinesAllocate" BaseTypeListCollapsed="true">
+    <Position X="20.5" Y="38.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AgCAAAAAAAAA+IYBAAAAAAAAAAQAABAAAAAAgAAAAAA=</HashCode>
+      <FileName>Manager\ManagerManageOrderLinesAllocate.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Manager.ManagerManageOrderLinesDelete" BaseTypeListCollapsed="true">
+    <Position X="23.5" Y="38.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AgCAAAAAAAAA+IYBAAAAAAAEAAQAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Manager\ManagerManageOrderLinesDelete.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Manager.ManagerManageOrderLinesEdit" BaseTypeListCollapsed="true">
+    <Position X="26.25" Y="38.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AgCAAAAAAAAA+IYBAAAAAAAAAAQAABAAAEAAAAAAAAA=</HashCode>
+      <FileName>Manager\ManagerManageOrderLinesEdit.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Manager.ManagerManageOrdersAdd" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="38.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AgCAAAAAAAAA+IYBAAAAAAAAAAQAADAAAAAAAAAAAAA=</HashCode>
+      <FileName>Manager\ManagerManageOrdersAdd.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Manager.ManagerManageOrdersDelete" BaseTypeListCollapsed="true">
+    <Position X="10" Y="38.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AgCAAAAAAAAA+IYBAAAAAAAEAAQAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Manager\ManagerManageOrdersDelete.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Manager.ManagerManageOrdersEdit" BaseTypeListCollapsed="true">
+    <Position X="12.75" Y="38.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AgCAAAAAAAAA+IYBAAAAAAAAAAQAABAAAEAAAAAAAAA=</HashCode>
+      <FileName>Manager\ManagerManageOrdersEdit.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Manager.ManagerManagePicksDelete" BaseTypeListCollapsed="true">
+    <Position X="31.25" Y="38.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AgCAAAAAAAAA+IYBAAAAAAAEAAQAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Manager\ManagerManagePicksDelete.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Manager.ManagerManageProductsAdd" BaseTypeListCollapsed="true">
+    <Position X="7.25" Y="27" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAmAYAAAAAAAAAAAAAADAAAAAAAAAAAAA=</HashCode>
+      <FileName>Manager\ManagerManageProductsAdd.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Manager.ManagerManageProductsDelete" BaseTypeListCollapsed="true">
+    <Position X="9.75" Y="27" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAmAYAAAAAAAAEAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Manager\ManagerManageProductsDelete.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Manager.ManagerManageProductsEdit" BaseTypeListCollapsed="true">
+    <Position X="12.5" Y="27" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAmAYAAAAAAAAAAAAAABAAAEAAAAAAAAA=</HashCode>
+      <FileName>Manager\ManagerManageProductsEdit.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Manager.ManagerManageReceiptLinesAdd" BaseTypeListCollapsed="true">
+    <Position X="17.75" Y="30.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAA+AYBAAAAAAAAAAAAADAAAAAAAAAAAAA=</HashCode>
+      <FileName>Manager\ManagerManageReceiptLinesAdd.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Manager.ManagerManageReceiptLinesDelete" BaseTypeListCollapsed="true">
+    <Position X="20.5" Y="30.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAA+AYBAAAAAAAEAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Manager\ManagerManageReceiptLinesDelete.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Manager.ManagerManageReceiptLinesEdit" BaseTypeListCollapsed="true">
+    <Position X="23.5" Y="30.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAA+AYBAAAAAAAAAAAAABAAAEAAAAAAAAA=</HashCode>
+      <FileName>Manager\ManagerManageReceiptLinesEdit.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Manager.ManagerManageReceiptsAdd" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="30.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAA+AYBAAAAAAAAAAAAADAAAAAAAAAAAAA=</HashCode>
+      <FileName>Manager\ManagerManageReceiptsAdd.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Manager.ManagerManageReceiptsDelete" BaseTypeListCollapsed="true">
+    <Position X="10" Y="30.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAA+AYBAAAAAAAEAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Manager\ManagerManageReceiptsDelete.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Manager.ManagerManageReceiptsEdit" BaseTypeListCollapsed="true">
+    <Position X="12.75" Y="30.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAA+AYBAAAAAAAAAAAAABAAAEAAAAAAAAA=</HashCode>
+      <FileName>Manager\ManagerManageReceiptsEdit.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Manager.ManagerManageStockAdd" BaseTypeListCollapsed="true">
+    <Position X="7.25" Y="34.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAA2AYAAAAAAAAAAAAAADAAAAAAAAAAAAA=</HashCode>
+      <FileName>Manager\ManagerManageStockAdd.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Manager.ManagerManageStockDelete" BaseTypeListCollapsed="true">
+    <Position X="9.75" Y="34.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAA2AYAAAAAAAAEAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Manager\ManagerManageStockDelete.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Manager.ManagerManageStockEdit" BaseTypeListCollapsed="true">
+    <Position X="12.25" Y="34.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAA2AYAAAAAAAAAAAAAABAAAEAAAAAAAAA=</HashCode>
+      <FileName>Manager\ManagerManageStockEdit.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Manager.ManagerViewAccountsAll" BaseTypeListCollapsed="true">
+    <Position X="15" Y="27" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAmAYAAAAAAIAAAAAAABAAAAAAAAAAgAA=</HashCode>
+      <FileName>Manager\ManagerViewAccountsAll.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Manager.ManagerViewLocationsAll" BaseTypeListCollapsed="true">
+    <Position X="14.75" Y="34.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAA2AYAAAAAAIAAAAAAABAAAAAAAAAAgAA=</HashCode>
+      <FileName>Manager\ManagerViewLocationsAll.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Manager.ManagerViewOrderLinesAll" BaseTypeListCollapsed="true">
+    <Position X="15.25" Y="38.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AgCAAAAAAAAA+IYBAAAAAAAAAAQAABAAAAAAAAAAgAA=</HashCode>
+      <FileName>Manager\ManagerViewOrderLinesAll.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Manager.ManagerViewOrdersAll" BaseTypeListCollapsed="true">
+    <Position X="5" Y="38.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AgCAAAAAAAAA+IYBAAAAAIAAAAQAABAAAAAAAAAAgAA=</HashCode>
+      <FileName>Manager\ManagerViewOrdersAll.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Manager.ManagerViewPicksAll" BaseTypeListCollapsed="true">
+    <Position X="29" Y="38.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AgCAAAAAAAAA+IYBAAAAAAAAAAQAABAAAAAAAAAAgAA=</HashCode>
+      <FileName>Manager\ManagerViewPicksAll.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Manager.ManagerViewProductsAll" BaseTypeListCollapsed="true">
+    <Position X="5" Y="27" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAmAYAAAAAAAAAAAAAABAAAAAAAAAAgAA=</HashCode>
+      <FileName>Manager\ManagerViewProductsAll.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Manager.ManagerViewReceiptLinesAll" BaseTypeListCollapsed="true">
+    <Position X="15.25" Y="30.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAA+AYBAAAAAAAAAAAAABAAAAAAAAAAgAA=</HashCode>
+      <FileName>Manager\ManagerViewReceiptLinesAll.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Manager.ManagerViewReceiptsAll" BaseTypeListCollapsed="true">
+    <Position X="5" Y="30.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAA+AYBAAAAAIAAAAAAABAAAAAAAAAAgAA=</HashCode>
+      <FileName>Manager\ManagerViewReceiptsAll.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Manager.ManagerViewStockAll" BaseTypeListCollapsed="true">
+    <Position X="5" Y="34.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAA2AYBAAAAAAAAAAAAABAAAAAAAAAAgAA=</HashCode>
+      <FileName>Manager\ManagerViewStockAll.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Manager.ManagerViewWarehousesAll" BaseTypeListCollapsed="true">
+    <Position X="17.25" Y="34.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAA2AYAAAAAAIAAAAAAABAAAAAAAAAAgAA=</HashCode>
+      <FileName>Manager\ManagerViewWarehousesAll.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Properties.Resources">
+    <Position X="0.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PresentationTier.Properties.Settings">
+    <Position X="0.5" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PresentationTier.Worker.WorkerHomepage" BaseTypeListCollapsed="true">
+    <Position X="3" Y="13.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAmAYAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Worker\WorkerHomepage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Worker.WorkerViewAccounts" BaseTypeListCollapsed="true">
+    <Position X="7" Y="13.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAgAQAAAAAAIAAAAAAABAAAAAAAAAAgAA=</HashCode>
+      <FileName>Worker\WorkerViewAccounts.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Worker.WorkerViewLocations" BaseTypeListCollapsed="true">
+    <Position X="7" Y="19.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAmAYAAAAAAIAAAAAAABAAAAAAAAAAgAA=</HashCode>
+      <FileName>Worker\WorkerViewLocations.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Worker.WorkerViewOrderLines" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="23.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAgAYAAAAAAAAAAAAAABAAAAAAAAAAgAA=</HashCode>
+      <FileName>Worker\WorkerViewOrderLines.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Worker.WorkerViewOrders" BaseTypeListCollapsed="true">
+    <Position X="5" Y="23.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAgAYAAAAAAIAAAAAAABAAAAAAAAAAgAA=</HashCode>
+      <FileName>Worker\WorkerViewOrders.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Worker.WorkerViewPicks" BaseTypeListCollapsed="true">
+    <Position X="9.75" Y="23.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAgAYBAAAAAAAAAAAAABAAAAAAAAAAgAA=</HashCode>
+      <FileName>Worker\WorkerViewPicks.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Worker.WorkerViewProducts" BaseTypeListCollapsed="true">
+    <Position X="5" Y="13.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAgAQAAAAAAAAAAAAAABAAAAAAAAAAgAA=</HashCode>
+      <FileName>Worker\WorkerViewProducts.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Worker.WorkerViewReceiptLines" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="16.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAgAQAAAAAAAAAAAAAABAAAAAAAAAAgAA=</HashCode>
+      <FileName>Worker\WorkerViewReceiptLines.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Worker.WorkerViewReceipts" BaseTypeListCollapsed="true">
+    <Position X="5" Y="16.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAgAQAAAAAAIAAAAAAABAAAAAAAAAAgAA=</HashCode>
+      <FileName>Worker\WorkerViewReceipts.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Worker.WorkerViewStock" BaseTypeListCollapsed="true">
+    <Position X="5" Y="19.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAmAYBAAAAAAAAAAAAABAAAAAAAAAAgAA=</HashCode>
+      <FileName>Worker\WorkerViewStock.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Worker.WorkerViewWarehouses" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="19.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAmAYAAAAAAIAAAAAAABAAAAAAAAAAgAA=</HashCode>
+      <FileName>Worker\WorkerViewWarehouses.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Worker.WorkerWorkStockAdd" BaseTypeListCollapsed="true">
+    <Position X="12" Y="19.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAmAYAAAAAAAAAAAAAADAAAAAAAAAAAAA=</HashCode>
+      <FileName>Worker\WorkerWorkStockAdd.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PresentationTier.Worker.WorkerWorkStockDelete" BaseTypeListCollapsed="true">
+    <Position X="14.25" Y="19.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAmAYAAAAAAAAEAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Worker\WorkerWorkStockDelete.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
