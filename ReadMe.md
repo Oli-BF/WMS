@@ -1,5 +1,32 @@
 # Overview
-* A Warehouse Management System for small logistics companies - Completed as part of my dissertation for MSc Computer Science at the University of Birmingham
+* A Warehouse Management System for small logistics companies - Completed as part of my dissertation for MSc Computer Science at the University of Birmingham.
+* This application was implemented using a three-tier architecture, the .NET Framework, Windows Presentation Foundation and a centralised database using Microsoft's SQL Server hosted on Azure.
+* Several UI examples can be found below.
+
+---
+
+**Login Page**
+![alt text](https://github.com/Oli-BF/Assets/blob/master/Login.png?raw=true)
+
+---
+
+**Homepage**
+![alt text](https://github.com/Oli-BF/Assets/blob/master/Homepage.png?raw=true)
+
+---
+
+**Datatable Example**
+![alt text](https://github.com/Oli-BF/Assets/blob/master/Datatable.png?raw=true)
+
+---
+
+**Add to Datatable Example**
+![alt text](https://github.com/Oli-BF/Assets/blob/master/Add.png?raw=true)
+
+---
+
+**Database Design**
+![alt text](https://github.com/Oli-BF/Assets/blob/master/Database.png?raw=true)
 
 ---
 
