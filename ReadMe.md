@@ -2,7 +2,7 @@
 * A Warehouse Management System for small logistics companies - Completed as part of my dissertation for MSc Computer Science at the University of Birmingham.
 * This application was implemented using a three-tier architecture, the .NET Framework, Windows Presentation Foundation and a centralised database using Microsoft's SQL Server hosted on Azure.
 * Several UI examples can be found below.
-
+* Please find the written part here: https://docs.google.com/document/d/e/2PACX-1vSlCdugE9OcLB1KT8NoHrqHs6yuJmM17DZCa5q7R82vXyji_Pzw-ynTC0O7rzCJDT8ANZfJkbU4_PHQ/pub
 ---
 
 **Login Page**
